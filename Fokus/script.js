@@ -5,18 +5,32 @@ const html = document.querySelector("html")
 const displayTempo = document.querySelector('#timer');
 const banner = document.querySelector('.app__image');
 const titulo = document.querySelector('.app__title')
+const musica = new Audio("sons/luna-rise-part-one.mp3")
+musica.loop = true
 
 // 2. Botões
 const botaoIniciar = document.querySelector('.app__card-primary-button');
 const btFoco = document.querySelector(".app__card-button--foco")
 const btCurto = document.querySelector(".app__card-button--curto")
 const btLongo = document.querySelector(".app__card-button--longo")
+const btSwitch = document.querySelector(".toggle-checkbox")
 
 // 3. Contextos
 const duracaoFoco = 1500; 
 const duracaoDescansoCurto = 300; 
 const duracaoDescansoLongo = 900; 
 
+
+// Evento toggle switch
+btSwitch.addEventListener("change", ()  => {
+  if (musica.paused) {
+    console.log("muica-tocar")
+    musica.play()
+  } else {
+    console.log("muica-parar")
+    musica.pause()
+  }
+})
 
 // Evento click = FOCO
 btFoco.addEventListener('click', () => {
@@ -71,7 +85,7 @@ function alterarContexto(contexto) {
       <strong class="app__title-strong">mergulhe no que importa.</strong>
       `
       break;
-    default
+    default:
       break;
     }
 }
