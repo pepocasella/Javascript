@@ -5,6 +5,8 @@ const html = document.querySelector("html")
 const displayTempo = document.querySelector('#timer');
 const banner = document.querySelector('.app__image');
 const titulo = document.querySelector('.app__title')
+const somAnalogicoPausa = new Audio("sons/pause.mp3")
+const somAnalogicoPlay = new Audio("sons/play.wav")
 const musica = new Audio("sons/luna-rise-part-one.mp3")
 musica.loop = true
 
@@ -25,9 +27,11 @@ const duracaoDescansoLongo = 900;
 btSwitch.addEventListener("change", ()  => {
   if (musica.paused) {
     console.log("muica-tocar")
+    somAnalogicoPlay.play()
     musica.play()
   } else {
     console.log("muica-parar")
+    somAnalogicoPausa.play()
     musica.pause()
   }
 })
