@@ -17,5 +17,5 @@ A palavra muda diariamente, e todos os jogadores enfrentam a mesma palavra do di
 
 
 ### Referências:
-How To Make WORDLE in 5 Minutes: https://www.youtube.com/watch?v=oKM2nQdQkIU 
-Wordle in JavaScript in 20 minutes: https://www.youtube.com/watch?v=oKM2nQdQkIU
+- How To Make WORDLE in 5 Minutes: https://www.youtube.com/watch?v=DivbaHkZbm0 
+- Wordle in JavaScript in 20 minutes: https://www.youtube.com/watch?v=oKM2nQdQkIU

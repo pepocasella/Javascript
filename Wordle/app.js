@@ -7,12 +7,23 @@ let keys = {
   let guesses = [];
   let currentGuess = [];
   
-  const SecretWord = 'jcode';
   const NumberOfGuesses = 6;
   const Correct = 'correct';
   const Found = 'found';
   const Wrong = 'wrong';
   
+
+
+  function chooseWord() {
+    let wordlist = ['cobra', 'homem', 'colher', 'mulher', 'mosca'];
+    let rand = Math.floor(Math.random() * wordlist.length);
+    SecretWord = wordlist[rand];
+    return SecretWord
+  }
+
+  var SecretWord = chooseWord();
+  console.log(SecretWord)
+
   function initialize() {
     let guessGrid = document.getElementById("guessGrid");
     for (let i = 0; i < NumberOfGuesses; i++) {
