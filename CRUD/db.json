@@ -9,6 +9,16 @@
       "nome": "Pedro",
       "email": "pedrocasellarodrigues@gmail.com",
       "id": 2
+    },
+    {
+      "nome": "Miguel",
+      "email": "miguel@gmail.com",
+      "id": 3
+    },
+    {
+      "nome": "Victor",
+      "email": "victor@gmail.com",
+      "id": 4
     }
   ]
 }
