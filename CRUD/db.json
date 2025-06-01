@@ -1,16 +1,6 @@
 {
   "profile": [
     {
-      "nome": "felipe",
-      "email": "felipe@alura.com",
-      "id": 1
-    },
-    {
-      "nome": "Pedro",
-      "email": "pedrocasellarodrigues@gmail.com",
-      "id": 2
-    },
-    {
       "nome": "Miguel",
       "email": "miguel@gmail.com",
       "id": 3
@@ -19,6 +9,16 @@
       "nome": "Victor",
       "email": "victor@gmail.com",
       "id": 4
+    },
+    {
+      "nome": "Pedro",
+      "email": "pedro@gmail.com",
+      "id": 5
+    },
+    {
+      "nome": "Bia",
+      "email": "bianca@gmail.com",
+      "id": 6
     }
   ]
 }
